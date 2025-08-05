@@ -38,20 +38,14 @@ export class PokemonListComponent implements OnInit {
       }
   }
 
-  eliminarPokemon(id: number) {
+  eliminarPokemon(id: number): void {
     const pokemon = this.PokemonsG1.data.find(p => p.id === id);
         if (pokemon) {
           pokemon.eliminado = true;
-          this.PokemonsG1._updateChangeSubscription(); 
+          this.PokemonsG1.data = this.PokemonsG1.data.filter(p => !p.eliminado); 
         }
   }
 
   
-  restaurarPokemon(id: number) {
-    const pokemon = this.PokemonsG1.data.find(p => p.id === id);
-    if (pokemon) {
-      pokemon.eliminado = false;
-      this.PokemonsG1._updateChangeSubscription();
-    }  
-  }
+
 }

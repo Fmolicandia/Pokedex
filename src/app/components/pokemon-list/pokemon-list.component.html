@@ -32,12 +32,6 @@
             (click)="eliminarPokemon(pokemon.id)">
         Eliminar
       </button>
-      <button *ngIf="pokemon.eliminado"
-            mat-button
-            color="primary"
-            (click)="restaurarPokemon(pokemon.id)">
-        Restaurar
-      </button>
     </td>
   </ng-container>
 
@@ -47,4 +41,4 @@
 
 </table>
 <!-- Paginado 04/08/25 -->
-<mat-paginator [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons></mat-paginator>
+<mat-paginator [pageSizeOptions]="[10, 15, 20]" showFirstLastButtons></mat-paginator>
