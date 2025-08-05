@@ -1,0 +1,51 @@
+
+.search-field {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  background-color: #f0f2f5;
+  border: 3px solid #000000;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.mat-column-id,
+.mat-column-name,
+.mat-column-actions {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000000;
+  padding: 8px 16px;
+}
+
+button[mat-button] {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button.clicked {
+  background-color: #1976d2;
+}
+
+.eliminado {
+  color: rgb(112, 112, 112);
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+.status {
+  flex-shrink: 0;
+  font-size: 0.75rem;
+  color: #c62828;
+  white-space: nowrap;
+}
