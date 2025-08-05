@@ -1,17 +1,31 @@
 
-# PPokedexApp
+# PokedexApp
 
 ## Descripción
 
-Aplicación Angular que lista los 151 Pokémon iniciales hardcodeados, con paginación, ordenamiento, búsqueda y posibilidad de eliminar temporalmente cada Pokémon.
+Aplicación Angular que lista los 151 Pokémon iniciales hardcodeados, con paginación, ordenamiento, búsqueda y posibilidad de eliminar temporalmente cada Pokemon.
 
 ## Instalación
 
-1. Clona el repositorio
-2. Ejecuta `npm install` para instalar dependencias
-3. Ejecuta `ng serve` para levantar la app localmente
-4. Abre `http://localhost:4200` en tu navegador
+# Requisitos para la instalacion
+Se debe tener instalado lo siguiente en tu sistema:
 
+- [Node.js](https://nodejs.org/) (versión 16 o superior recomendada)
+- [Angular CLI](https://angular.io/cli) (versión 15)
+
+# Para verificar las versiones:
+- node -v
+- ng version
+
+# Intalacion de dependencias:
+- npm install
+
+# Utiliza sigueinte comando para levantar:
+- ng serve
+
+# La aplicacion se levante en el puerto:
+- http://localhost:4200/
+- 
 ## Tecnologías usadas
 
 - Angular 15+
@@ -25,9 +39,7 @@ Aplicación Angular que lista los 151 Pokémon iniciales hardcodeados, con pagin
 - Buscador por nombre
 - Botón para eliminar temporalmente Pokémon del listado
 
-## Consideraciones
 
-Los Pokémon eliminados se quitan solo en memoria (no persisten al recargar).
 
 # PokedexApp
 
